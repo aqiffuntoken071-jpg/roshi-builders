@@ -23,7 +23,7 @@ const description =
 
 export const Route = createFileRoute("/contact")({
   validateSearch: (search: Record<string, unknown>) => ({
-    service: typeof search.service === "string" ? search.service : undefined,
+    service: typeof search["service"] === "string" ? (search["service"] as string) : undefined,
   }),
   head: () => ({
     meta: [
