@@ -108,7 +108,7 @@ function ServicesPage() {
                   ))}
                 </ul>
                 <div className="mt-8 flex flex-col items-stretch gap-3 sm:flex-row">
-                  <BtnLink to="/contact" search={() => ({ service: s.title })}>
+                  <BtnLink to="/contact" search={{ service: s.title } as never}>
                     Quote for {s.title} <ArrowRight className="h-4 w-4" />
                   </BtnLink>
                   <BtnAnchor href={PHONE_TEL} variant="outline">
