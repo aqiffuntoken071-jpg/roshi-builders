@@ -22,9 +22,8 @@ const description =
   "Contact Roshi Builders for a free, no-obligation quote. Call 07918 208882, send a message, or check our service areas across London and the Home Counties.";
 
 export const Route = createFileRoute("/contact")({
-  validateSearch: (search: Record<string, unknown>) => ({
-    service: typeof search["service"] === "string" ? (search["service"] as string) : undefined,
-  }),
+  validateSearch: (search: Record<string, unknown>): { service?: string } =>
+    typeof search["service"] === "string" ? { service: search["service"] as string } : {},
   head: () => ({
     meta: [
       { title },
