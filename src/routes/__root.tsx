@@ -92,6 +92,12 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
       { property: "og:type", content: "website" },
       { name: "twitter:card", content: "summary_large_image" },
       { name: "theme-color", content: "#8B2332" },
+      { property: "og:title", content: "Roshi Builders | UK Construction & Home Improvement" },
+      { name: "twitter:title", content: "Roshi Builders | UK Construction & Home Improvement" },
+      { property: "og:description", content: "Roshi Builders — quality craftsmanship you can trust. Tiling, plastering, painting, flooring, loft conversions, gardens and bespoke media walls across London and the Home Counties." },
+      { name: "twitter:description", content: "Roshi Builders — quality craftsmanship you can trust. Tiling, plastering, painting, flooring, loft conversions, gardens and bespoke media walls across London and the Home Counties." },
+      { property: "og:image", content: "https://pub-bb2e103a32db4e198524a2e9ed8f35b4.r2.dev/d635feed-3cd3-41e8-b5c8-6ed137a2742f/id-preview-0b672cd7--8ad87f97-3838-4b66-9df3-af84ca1efc65.lovable.app-1785919405198.png" },
+      { name: "twitter:image", content: "https://pub-bb2e103a32db4e198524a2e9ed8f35b4.r2.dev/d635feed-3cd3-41e8-b5c8-6ed137a2742f/id-preview-0b672cd7--8ad87f97-3838-4b66-9df3-af84ca1efc65.lovable.app-1785919405198.png" },
     ],
     links: [
       { rel: "stylesheet", href: appCss },
