@@ -52,17 +52,15 @@ export const Route = createFileRoute("/faq")({
 function FaqPage() {
   return (
     <>
-      <section className="bg-charcoal text-charcoal-foreground">
-        <div className="container-x py-16 md:py-20">
-          <Reveal className="max-w-2xl">
-            <span className="eyebrow text-primary-foreground/90">FAQ</span>
-            <h1 className="text-fluid-hero mt-3 uppercase">Good questions</h1>
-            <p className="mt-5 text-base leading-relaxed text-charcoal-foreground/80 sm:text-lg">
-              Everything homeowners usually ask before we start — answered straight.
-            </p>
-          </Reveal>
-        </div>
-      </section>
+      <PageHero images={[hero2, workFlooring, hero3, workGarden]}>
+        <Reveal className="max-w-2xl">
+          <span className="eyebrow text-primary-foreground/90">FAQ</span>
+          <h1 className="text-fluid-hero mt-3 uppercase">Good questions</h1>
+          <p className="mt-5 text-base leading-relaxed text-charcoal-foreground/85 sm:text-lg">
+            Everything homeowners usually ask before we start — answered straight.
+          </p>
+        </Reveal>
+      </PageHero>
 
       <section className="container-x section-y">
         <div className="grid gap-10 lg:grid-cols-[minmax(0,1fr)_20rem] lg:gap-14">
