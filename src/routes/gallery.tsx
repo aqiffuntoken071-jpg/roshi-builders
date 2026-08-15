@@ -201,7 +201,8 @@ function GalleryPage() {
         </div>
       </section>
 
-      {current && (
+      {current && mounted &&
+        createPortal(
         <div
           role="dialog"
           aria-modal="true"
