@@ -45,18 +45,16 @@ const imageBySlug: Record<string, string> = {
 function ServicesPage() {
   return (
     <>
-      <section className="bg-charcoal text-charcoal-foreground">
-        <div className="container-x py-16 md:py-20">
-          <Reveal className="max-w-2xl">
-            <span className="eyebrow text-primary-foreground/90">Services</span>
-            <h1 className="text-fluid-hero mt-3 uppercase">What we build</h1>
-            <p className="mt-5 text-base leading-relaxed text-charcoal-foreground/80 sm:text-lg">
-              Seven core services, all delivered by the same team — so your finishes line up and
-              your project stays on schedule.
-            </p>
-          </Reveal>
-        </div>
-      </section>
+      <PageHero images={[hero1, workTiling, workPlastering, workFlooring, workGarden]}>
+        <Reveal className="max-w-2xl">
+          <span className="eyebrow text-primary-foreground/90">Services</span>
+          <h1 className="text-fluid-hero mt-3 uppercase">What we build</h1>
+          <p className="mt-5 text-base leading-relaxed text-charcoal-foreground/85 sm:text-lg">
+            Seven core services, all delivered by the same team — so your finishes line up and
+            your project stays on schedule.
+          </p>
+        </Reveal>
+      </PageHero>
 
       {/* QUICK NAV */}
       <section className="sticky top-16 z-30 border-b border-border bg-background/95 backdrop-blur-md md:top-20">
