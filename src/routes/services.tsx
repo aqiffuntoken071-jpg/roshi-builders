@@ -10,6 +10,7 @@ import hero2 from "@/assets/hero-2.jpg";
 import { PHONE_DISPLAY, PHONE_TEL, SERVICES } from "@/data/site";
 import { BtnAnchor, BtnLink } from "@/components/Btn";
 import { Reveal } from "@/components/Reveal";
+import { PageHero } from "@/components/PageHero";
 import { CtaBanner } from "@/components/CtaBanner";
 
 const title = "Our Services | Tiling, Plastering & Media Walls — Roshi Builders";
