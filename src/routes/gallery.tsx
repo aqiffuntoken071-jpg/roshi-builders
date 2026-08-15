@@ -258,8 +258,9 @@ function GalleryPage() {
               <span className="mt-1 block">{current.alt}</span>
             </figcaption>
           </figure>
-        </div>
-      )}
+        </div>,
+          document.body,
+        )}
 
       <CtaBanner
         title="Like what you see?"
