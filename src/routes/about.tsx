@@ -54,27 +54,16 @@ const values = [
 function AboutPage() {
   return (
     <>
-      <section className="relative isolate overflow-hidden bg-charcoal text-charcoal-foreground">
-        <img
-          src={hero2}
-          alt="Completed loft conversion by Roshi Builders"
-          width={1920}
-          height={1280}
-          loading="eager"
-          sizes="100vw"
-          className="absolute inset-0 h-full w-full object-cover opacity-35"
-        />
-        <div className="container-x relative py-16 md:py-24">
-          <Reveal className="max-w-2xl">
-            <span className="eyebrow text-primary-foreground/90">About Us</span>
-            <h1 className="text-fluid-hero mt-3 uppercase">Built on trust</h1>
-            <p className="mt-5 text-base leading-relaxed text-charcoal-foreground/80 sm:text-lg">
-              A decade of turning tired rooms into spaces people love coming home to — one honest
-              job at a time.
-            </p>
-          </Reveal>
-        </div>
-      </section>
+      <PageHero images={[hero2, hero1, workPainting, roshi]}>
+        <Reveal className="max-w-2xl">
+          <span className="eyebrow text-primary-foreground/90">About Us</span>
+          <h1 className="text-fluid-hero mt-3 uppercase">Built on trust</h1>
+          <p className="mt-5 text-base leading-relaxed text-charcoal-foreground/85 sm:text-lg">
+            A decade of turning tired rooms into spaces people love coming home to — one honest
+            job at a time.
+          </p>
+        </Reveal>
+      </PageHero>
 
       {/* STATS BAR */}
       <section className="border-b border-border bg-secondary">
