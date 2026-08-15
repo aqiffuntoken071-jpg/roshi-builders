@@ -7,8 +7,13 @@ import {
   CarouselNext,
   CarouselPrevious,
 } from "@/components/ui/carousel";
+import hero1 from "@/assets/hero-1.jpg";
+import hero3 from "@/assets/hero-3.jpg";
+import workLighting from "@/assets/work-lighting.jpg";
+import workPainting from "@/assets/work-painting.jpg";
 import { STATS, TESTIMONIALS } from "@/data/site";
 import { Reveal } from "@/components/Reveal";
+import { PageHero } from "@/components/PageHero";
 import { CtaBanner } from "@/components/CtaBanner";
 
 const title = "Testimonials | What Roshi Builders' Customers Say";
@@ -43,17 +48,15 @@ function Stars({ n }: { n: number }) {
 function TestimonialsPage() {
   return (
     <>
-      <section className="bg-charcoal text-charcoal-foreground">
-        <div className="container-x py-16 md:py-20">
-          <Reveal className="max-w-2xl">
-            <span className="eyebrow text-primary-foreground/90">Testimonials</span>
-            <h1 className="text-fluid-hero mt-3 uppercase">Trusted by homeowners</h1>
-            <p className="mt-5 text-base leading-relaxed text-charcoal-foreground/80 sm:text-lg">
-              We'd rather let our customers do the talking. Swipe through what they've said.
-            </p>
-          </Reveal>
-        </div>
-      </section>
+      <PageHero images={[hero3, workLighting, hero1, workPainting]}>
+        <Reveal className="max-w-2xl">
+          <span className="eyebrow text-primary-foreground/90">Testimonials</span>
+          <h1 className="text-fluid-hero mt-3 uppercase">Trusted by homeowners</h1>
+          <p className="mt-5 text-base leading-relaxed text-charcoal-foreground/85 sm:text-lg">
+            We'd rather let our customers do the talking. Swipe through what they've said.
+          </p>
+        </Reveal>
+      </PageHero>
 
       <section className="container-x section-y">
         <Reveal>

@@ -12,9 +12,14 @@ import {
   ShieldCheck,
 } from "lucide-react";
 import { toast } from "sonner";
+import hero1 from "@/assets/hero-1.jpg";
+import hero2 from "@/assets/hero-2.jpg";
+import workTiling from "@/assets/work-tiling.jpg";
+import workLighting from "@/assets/work-lighting.jpg";
 import { PHONE_DISPLAY, PHONE_TEL, SERVICES } from "@/data/site";
 import { Btn, BtnAnchor } from "@/components/Btn";
 import { Reveal } from "@/components/Reveal";
+import { PageHero } from "@/components/PageHero";
 import { CtaBanner } from "@/components/CtaBanner";
 
 const title = "Contact Roshi Builders | Free Quotes — 07918 208882";
@@ -81,25 +86,23 @@ function ContactPage() {
 
   return (
     <>
-      <section className="bg-charcoal text-charcoal-foreground">
-        <div className="container-x py-16 md:py-20">
-          <Reveal className="max-w-2xl">
-            <span className="eyebrow text-primary-foreground/90">Contact</span>
-            <h1 className="text-fluid-hero mt-3 uppercase">Let's talk</h1>
-            <p className="mt-5 text-base leading-relaxed text-charcoal-foreground/80 sm:text-lg">
-              Free quotes, honest advice and a same-day reply. Call, message or fill in the form.
-            </p>
-            <div className="mt-8 flex flex-col items-stretch gap-3 sm:flex-row">
-              <BtnAnchor href={PHONE_TEL} size="lg">
-                <Phone className="h-5 w-5" strokeWidth={2.5} /> {PHONE_DISPLAY}
-              </BtnAnchor>
-              <BtnAnchor href="mailto:info@roshibuilders.co.uk" variant="onDark" size="lg">
-                <Mail className="h-5 w-5" /> Email Us
-              </BtnAnchor>
-            </div>
-          </Reveal>
-        </div>
-      </section>
+      <PageHero images={[hero1, workTiling, hero2, workLighting]}>
+        <Reveal className="max-w-2xl">
+          <span className="eyebrow text-primary-foreground/90">Contact</span>
+          <h1 className="text-fluid-hero mt-3 uppercase">Let's talk</h1>
+          <p className="mt-5 text-base leading-relaxed text-charcoal-foreground/85 sm:text-lg">
+            Free quotes, honest advice and a same-day reply. Call, message or fill in the form.
+          </p>
+          <div className="mt-8 flex flex-col items-stretch gap-3 sm:flex-row">
+            <BtnAnchor href={PHONE_TEL} size="lg">
+              <Phone className="h-5 w-5" strokeWidth={2.5} /> {PHONE_DISPLAY}
+            </BtnAnchor>
+            <BtnAnchor href="mailto:info@roshibuilders.co.uk" variant="onDark" size="lg">
+              <Mail className="h-5 w-5" /> Email Us
+            </BtnAnchor>
+          </div>
+        </Reveal>
+      </PageHero>
 
       <section className="container-x section-y">
         <div className="grid gap-10 lg:grid-cols-[minmax(0,1.15fr)_minmax(0,0.85fr)] lg:gap-14">

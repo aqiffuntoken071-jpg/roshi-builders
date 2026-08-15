@@ -12,6 +12,7 @@ import workPlastering from "@/assets/work-plastering.jpg";
 import workGarden from "@/assets/work-garden.jpg";
 import workLighting from "@/assets/work-lighting.jpg";
 import { Reveal } from "@/components/Reveal";
+import { PageHero } from "@/components/PageHero";
 import { CtaBanner } from "@/components/CtaBanner";
 import { cn } from "@/lib/utils";
 
@@ -55,18 +56,9 @@ const HEADER_SLIDES = [hero1, hero3, workTiling, workGarden, hero2];
 function GalleryPage() {
   const [filter, setFilter] = useState("All");
   const [openIndex, setOpenIndex] = useState<number | null>(null);
-  const [slide, setSlide] = useState(0);
   const [mounted, setMounted] = useState(false);
 
   useEffect(() => setMounted(true), []);
-
-  useEffect(() => {
-    const id = window.setInterval(
-      () => setSlide((s) => (s + 1) % HEADER_SLIDES.length),
-      4500,
-    );
-    return () => window.clearInterval(id);
-  }, []);
 
   const visible = useMemo(
     () => (filter === "All" ? ITEMS : ITEMS.filter((i) => i.category === filter)),
@@ -99,44 +91,16 @@ function GalleryPage() {
 
   return (
     <>
-      <section className="relative isolate overflow-hidden bg-charcoal text-charcoal-foreground">
-        <div className="absolute inset-0 -z-10">
-          {HEADER_SLIDES.map((src, i) => (
-            <img
-              key={src}
-              src={src}
-              alt=""
-              aria-hidden="true"
-              loading={i === 0 ? "eager" : "lazy"}
-              className={cn(
-                "absolute inset-0 h-full w-full object-cover transition-opacity duration-[1200ms]",
-                i === slide ? "opacity-100" : "opacity-0",
-              )}
-            />
-          ))}
-          <div className="absolute inset-0 bg-charcoal/75" />
-        </div>
-        <div className="container-x py-20 md:py-28">
-          <Reveal className="max-w-2xl">
-            <span className="eyebrow text-primary-foreground/90">Portfolio</span>
-            <h1 className="text-fluid-hero mt-3 uppercase">Our work</h1>
-            <p className="mt-5 text-base leading-relaxed text-charcoal-foreground/85 sm:text-lg">
-              Real projects, real homes. Filter by trade and tap any photo to view it full size.
-            </p>
-            <div className="mt-8 flex gap-2" aria-hidden="true">
-              {HEADER_SLIDES.map((src, i) => (
-                <span
-                  key={src}
-                  className={cn(
-                    "h-1.5 rounded-full transition-all duration-500",
-                    i === slide ? "w-8 bg-primary" : "w-3 bg-charcoal-foreground/40",
-                  )}
-                />
-              ))}
-            </div>
-          </Reveal>
-        </div>
-      </section>
+      <PageHero images={HEADER_SLIDES}>
+        <Reveal className="max-w-2xl">
+          <span className="eyebrow text-primary-foreground/90">Portfolio</span>
+          <h1 className="text-fluid-hero mt-3 uppercase">Our work</h1>
+          <p className="mt-5 text-base leading-relaxed text-charcoal-foreground/85 sm:text-lg">
+            Real projects, real homes. Filter by trade and tap any photo to view it full size.
+          </p>
+        </Reveal>
+      </PageHero>
+
 
       <section className="container-x section-y">
         <div
