@@ -12,6 +12,7 @@ import workPlastering from "@/assets/work-plastering.jpg";
 import workGarden from "@/assets/work-garden.jpg";
 import workLighting from "@/assets/work-lighting.jpg";
 import { Reveal } from "@/components/Reveal";
+import { PageHero } from "@/components/PageHero";
 import { CtaBanner } from "@/components/CtaBanner";
 import { cn } from "@/lib/utils";
 
