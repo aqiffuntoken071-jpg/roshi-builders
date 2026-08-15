@@ -48,17 +48,15 @@ function Stars({ n }: { n: number }) {
 function TestimonialsPage() {
   return (
     <>
-      <section className="bg-charcoal text-charcoal-foreground">
-        <div className="container-x py-16 md:py-20">
-          <Reveal className="max-w-2xl">
-            <span className="eyebrow text-primary-foreground/90">Testimonials</span>
-            <h1 className="text-fluid-hero mt-3 uppercase">Trusted by homeowners</h1>
-            <p className="mt-5 text-base leading-relaxed text-charcoal-foreground/80 sm:text-lg">
-              We'd rather let our customers do the talking. Swipe through what they've said.
-            </p>
-          </Reveal>
-        </div>
-      </section>
+      <PageHero images={[hero3, workLighting, hero1, workPainting]}>
+        <Reveal className="max-w-2xl">
+          <span className="eyebrow text-primary-foreground/90">Testimonials</span>
+          <h1 className="text-fluid-hero mt-3 uppercase">Trusted by homeowners</h1>
+          <p className="mt-5 text-base leading-relaxed text-charcoal-foreground/85 sm:text-lg">
+            We'd rather let our customers do the talking. Swipe through what they've said.
+          </p>
+        </Reveal>
+      </PageHero>
 
       <section className="container-x section-y">
         <Reveal>
