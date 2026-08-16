@@ -6,15 +6,12 @@ import {
   AccordionItem,
   AccordionTrigger,
 } from "@/components/ui/accordion";
-import hero2 from "@/assets/hero-2.jpg";
-import hero3 from "@/assets/hero-3.jpg";
-import workFlooring from "@/assets/work-flooring.jpg";
-import workGarden from "@/assets/work-garden.jpg";
 import { FAQS, PHONE_DISPLAY, PHONE_TEL } from "@/data/site";
 import { BtnAnchor, BtnLink } from "@/components/Btn";
 import { Reveal } from "@/components/Reveal";
 import { PageHero } from "@/components/PageHero";
 import { CtaBanner } from "@/components/CtaBanner";
+import { hero2, hero3, workFlooring, workGarden } from "@/assets/photos";
 
 const title = "FAQ | Areas Covered, Quotes & Guarantees — Roshi Builders";
 const description =

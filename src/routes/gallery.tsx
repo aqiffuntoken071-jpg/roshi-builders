@@ -2,19 +2,11 @@ import { createFileRoute } from "@tanstack/react-router";
 import { useCallback, useEffect, useMemo, useState } from "react";
 import { createPortal } from "react-dom";
 import { ChevronLeft, ChevronRight, X, ZoomIn } from "lucide-react";
-import hero1 from "@/assets/hero-1.jpg";
-import hero2 from "@/assets/hero-2.jpg";
-import hero3 from "@/assets/hero-3.jpg";
-import workTiling from "@/assets/work-tiling.jpg";
-import workPainting from "@/assets/work-painting.jpg";
-import workFlooring from "@/assets/work-flooring.jpg";
-import workPlastering from "@/assets/work-plastering.jpg";
-import workGarden from "@/assets/work-garden.jpg";
-import workLighting from "@/assets/work-lighting.jpg";
 import { Reveal } from "@/components/Reveal";
 import { PageHero } from "@/components/PageHero";
 import { CtaBanner } from "@/components/CtaBanner";
 import { cn } from "@/lib/utils";
+import { hero1, hero2, hero3, workTiling, workPainting, workFlooring, workPlastering, workGarden, workLighting } from "@/assets/photos";
 
 const title = "Gallery | Completed Projects by Roshi Builders";
 const description =

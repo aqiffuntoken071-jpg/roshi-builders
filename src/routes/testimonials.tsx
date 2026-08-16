@@ -7,14 +7,11 @@ import {
   CarouselNext,
   CarouselPrevious,
 } from "@/components/ui/carousel";
-import hero1 from "@/assets/hero-1.jpg";
-import hero3 from "@/assets/hero-3.jpg";
-import workLighting from "@/assets/work-lighting.jpg";
-import workPainting from "@/assets/work-painting.jpg";
 import { STATS, TESTIMONIALS } from "@/data/site";
 import { Reveal } from "@/components/Reveal";
 import { PageHero } from "@/components/PageHero";
 import { CtaBanner } from "@/components/CtaBanner";
+import { hero1, hero3, workLighting, workPainting } from "@/assets/photos";
 
 const title = "Testimonials | What Roshi Builders' Customers Say";
 const description =

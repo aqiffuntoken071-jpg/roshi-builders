@@ -11,19 +11,11 @@ import {
   Star,
   ThumbsUp,
 } from "lucide-react";
-import hero1 from "@/assets/hero-1.jpg";
-import hero2 from "@/assets/hero-2.jpg";
-import hero3 from "@/assets/hero-3.jpg";
-import workTiling from "@/assets/work-tiling.jpg";
-import workPainting from "@/assets/work-painting.jpg";
-import workFlooring from "@/assets/work-flooring.jpg";
-import workGarden from "@/assets/work-garden.jpg";
-import workLighting from "@/assets/work-lighting.jpg";
-import workPlastering from "@/assets/work-plastering.jpg";
 import { PHONE_DISPLAY, PHONE_TEL, SERVICES, STATS, TESTIMONIALS } from "@/data/site";
 import { BtnAnchor, BtnLink } from "@/components/Btn";
 import { Reveal } from "@/components/Reveal";
 import { CtaBanner } from "@/components/CtaBanner";
+import { hero1, hero2, hero3, workTiling, workPainting, workFlooring, workGarden, workLighting, workPlastering } from "@/assets/photos";
 
 const title = "Roshi Builders | Quality Craftsmanship You Can Trust";
 const description =

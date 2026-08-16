@@ -1,14 +1,11 @@
 import { createFileRoute } from "@tanstack/react-router";
 import { ArrowRight, Award, Eye, HandshakeIcon, Heart, Ruler, ShieldCheck } from "lucide-react";
-import roshi from "@/assets/team-roshi.jpg";
-import hero1 from "@/assets/hero-1.jpg";
-import hero2 from "@/assets/hero-2.jpg";
-import workPainting from "@/assets/work-painting.jpg";
 import { STATS } from "@/data/site";
 import { BtnLink } from "@/components/Btn";
 import { Reveal } from "@/components/Reveal";
 import { PageHero } from "@/components/PageHero";
 import { CtaBanner } from "@/components/CtaBanner";
+import { roshi, hero1, hero2, workPainting } from "@/assets/photos";
 
 const title = "About Roshi Builders | 12+ Years of UK Home Improvement";
 const description =
