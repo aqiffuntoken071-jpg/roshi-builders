@@ -37,9 +37,9 @@ export const Route = createFileRoute("/")({
 });
 
 const slides = [
-  { src: hero1, alt: "Bespoke media wall with electric fireplace and mounted TV" },
-  { src: hero2, alt: "Completed loft conversion bedroom with skylights" },
-  { src: hero3, alt: "Newly tiled modern bathroom with walk-in shower" },
+  { src: hero1, alt: "Bespoke media wall with electric fireplace, mounted TV and blue LED lighting" },
+  { src: hero2, alt: "Completed loft room with skylight, fresh plaster and new laminate flooring" },
+  { src: hero3, alt: "Marble-effect tiled bathroom with new vanity unit and spotlights" },
 ];
 
 const trustBadges = [
