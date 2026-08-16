@@ -50,12 +50,12 @@ const trustBadges = [
 ];
 
 const galleryPreview = [
-  { src: workLighting, alt: "Recessed ceiling spotlights and cove lighting installation" },
-  { src: workTiling, alt: "Large format tiled kitchen floor" },
-  { src: workPainting, alt: "Freshly painted hallway with panelling" },
-  { src: workFlooring, alt: "Newly fitted light oak laminate flooring" },
-  { src: workPlastering, alt: "Smoothly skimmed walls and ceiling" },
-  { src: workGarden, alt: "Landscaped garden with new patio and fencing" },
+  { src: workLighting, alt: "Drop ceiling with recessed spotlights and blue LED cove lighting" },
+  { src: workTiling, alt: "Marble-effect tiled bathroom walls and floor" },
+  { src: workPainting, alt: "Decorated living room with lit alcove shelving and LED coving" },
+  { src: workFlooring, alt: "Laminate-clad staircase with brushed metal nosings" },
+  { src: workPlastering, alt: "Freshly skimmed ceiling and walls with recessed lighting" },
+  { src: workGarden, alt: "Finished living room with media wall, alcoves and LED coving" },
 ];
 
 function HomePage() {
