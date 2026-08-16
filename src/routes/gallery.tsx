@@ -6,7 +6,7 @@ import { Reveal } from "@/components/Reveal";
 import { PageHero } from "@/components/PageHero";
 import { CtaBanner } from "@/components/CtaBanner";
 import { cn } from "@/lib/utils";
-import { hero1, hero2, hero3, workTiling, workPainting, workFlooring, workPlastering, workGarden, workLighting } from "@/assets/photos";
+import { PHOTO, hero1, hero2, hero3, workTiling, workGarden } from "@/assets/photos";
 
 const title = "Gallery | Completed Projects by Roshi Builders";
 const description =
