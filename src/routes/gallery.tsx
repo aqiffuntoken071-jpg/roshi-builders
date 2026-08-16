@@ -2,19 +2,11 @@ import { createFileRoute } from "@tanstack/react-router";
 import { useCallback, useEffect, useMemo, useState } from "react";
 import { createPortal } from "react-dom";
 import { ChevronLeft, ChevronRight, X, ZoomIn } from "lucide-react";
-import hero1 from "@/assets/hero-1.jpg";
-import hero2 from "@/assets/hero-2.jpg";
-import hero3 from "@/assets/hero-3.jpg";
-import workTiling from "@/assets/work-tiling.jpg";
-import workPainting from "@/assets/work-painting.jpg";
-import workFlooring from "@/assets/work-flooring.jpg";
-import workPlastering from "@/assets/work-plastering.jpg";
-import workGarden from "@/assets/work-garden.jpg";
-import workLighting from "@/assets/work-lighting.jpg";
 import { Reveal } from "@/components/Reveal";
 import { PageHero } from "@/components/PageHero";
 import { CtaBanner } from "@/components/CtaBanner";
 import { cn } from "@/lib/utils";
+import { PHOTO, hero1, hero2, hero3, workTiling, workGarden } from "@/assets/photos";
 
 const title = "Gallery | Completed Projects by Roshi Builders";
 const description =
@@ -38,15 +30,16 @@ export const Route = createFileRoute("/gallery")({
 type Item = { src: string; alt: string; category: string; tall?: boolean };
 
 const ITEMS: Item[] = [
-  { src: hero1, alt: "Bespoke media wall with electric fireplace, mounted TV and LED lighting", category: "Media Walls", tall: true },
-  { src: workLighting, alt: "Recessed ceiling spotlights with cove strip lighting", category: "Lighting" },
-  { src: workTiling, alt: "Large format porcelain tiled kitchen floor", category: "Tiling" },
-  { src: hero3, alt: "Fully tiled modern bathroom with walk-in shower", category: "Bathrooms", tall: true },
-  { src: workPainting, alt: "Painted hallway with wall panelling and crisp white woodwork", category: "Painting" },
-  { src: workPlastering, alt: "Smoothly skimmed walls and ceiling ready for decoration", category: "Plastering" },
-  { src: workFlooring, alt: "Newly fitted light oak laminate flooring", category: "Flooring" },
-  { src: hero2, alt: "Loft conversion bedroom with skylights and laminate flooring", category: "Loft Conversions", tall: true },
-  { src: workGarden, alt: "Landscaped garden with porcelain patio, lawn and new fencing", category: "Gardens" },
+  { src: PHOTO.mediaWallLed, alt: "Bespoke media wall with electric fireplace, mounted TV, slate panels and blue LED lighting", category: "Media Walls", tall: true },
+  { src: PHOTO.ceilingLed, alt: "Drop ceiling with recessed spotlights and blue LED cove lighting", category: "Lighting" },
+  { src: PHOTO.bathroom, alt: "Marble-effect tiled bathroom with vanity unit, mirror and spotlights", category: "Bathrooms", tall: true },
+  { src: PHOTO.mediaWallFire, alt: "Plastered media wall with recessed TV, lit alcoves and inset electric fire", category: "Media Walls" },
+  { src: PHOTO.livingLed, alt: "Decorated living room with lit alcove shelving and LED coving", category: "Painting" },
+  { src: PHOTO.plastering, alt: "Freshly skimmed ceiling and walls with recessed spotlights", category: "Plastering" },
+  { src: PHOTO.stairs, alt: "Laminate-clad staircase with brushed metal stair nosings", category: "Flooring" },
+  { src: PHOTO.loft, alt: "Finished loft room with skylight, painted walls and new laminate flooring", category: "Loft Conversions", tall: true },
+  { src: PHOTO.ceilingLed2, alt: "Layered plasterboard ceiling with spotlights and blue LED strip", category: "Lighting" },
+  { src: PHOTO.livingMediaWall, alt: "Completed living room with media wall, display alcoves and LED coving", category: "Media Walls", tall: true },
 ];
 
 const CATEGORIES = ["All", ...Array.from(new Set(ITEMS.map((i) => i.category)))];

@@ -1,17 +1,11 @@
 import { createFileRoute } from "@tanstack/react-router";
 import { ArrowRight, Check, Phone } from "lucide-react";
-import workTiling from "@/assets/work-tiling.jpg";
-import workPainting from "@/assets/work-painting.jpg";
-import workFlooring from "@/assets/work-flooring.jpg";
-import workPlastering from "@/assets/work-plastering.jpg";
-import workGarden from "@/assets/work-garden.jpg";
-import hero1 from "@/assets/hero-1.jpg";
-import hero2 from "@/assets/hero-2.jpg";
 import { PHONE_DISPLAY, PHONE_TEL, SERVICES } from "@/data/site";
 import { BtnAnchor, BtnLink } from "@/components/Btn";
 import { Reveal } from "@/components/Reveal";
 import { PageHero } from "@/components/PageHero";
 import { CtaBanner } from "@/components/CtaBanner";
+import { workTiling, workPainting, workFlooring, workPlastering, workGarden, hero1, hero2 } from "@/assets/photos";
 
 const title = "Our Services | Tiling, Plastering & Media Walls — Roshi Builders";
 const description =

@@ -11,19 +11,11 @@ import {
   Star,
   ThumbsUp,
 } from "lucide-react";
-import hero1 from "@/assets/hero-1.jpg";
-import hero2 from "@/assets/hero-2.jpg";
-import hero3 from "@/assets/hero-3.jpg";
-import workTiling from "@/assets/work-tiling.jpg";
-import workPainting from "@/assets/work-painting.jpg";
-import workFlooring from "@/assets/work-flooring.jpg";
-import workGarden from "@/assets/work-garden.jpg";
-import workLighting from "@/assets/work-lighting.jpg";
-import workPlastering from "@/assets/work-plastering.jpg";
 import { PHONE_DISPLAY, PHONE_TEL, SERVICES, STATS, TESTIMONIALS } from "@/data/site";
 import { BtnAnchor, BtnLink } from "@/components/Btn";
 import { Reveal } from "@/components/Reveal";
 import { CtaBanner } from "@/components/CtaBanner";
+import { hero1, hero2, hero3, workTiling, workPainting, workFlooring, workGarden, workLighting, workPlastering } from "@/assets/photos";
 
 const title = "Roshi Builders | Quality Craftsmanship You Can Trust";
 const description =
@@ -45,9 +37,9 @@ export const Route = createFileRoute("/")({
 });
 
 const slides = [
-  { src: hero1, alt: "Bespoke media wall with electric fireplace and mounted TV" },
-  { src: hero2, alt: "Completed loft conversion bedroom with skylights" },
-  { src: hero3, alt: "Newly tiled modern bathroom with walk-in shower" },
+  { src: hero1, alt: "Bespoke media wall with electric fireplace, mounted TV and blue LED lighting" },
+  { src: hero2, alt: "Completed loft room with skylight, fresh plaster and new laminate flooring" },
+  { src: hero3, alt: "Marble-effect tiled bathroom with new vanity unit and spotlights" },
 ];
 
 const trustBadges = [
@@ -58,12 +50,12 @@ const trustBadges = [
 ];
 
 const galleryPreview = [
-  { src: workLighting, alt: "Recessed ceiling spotlights and cove lighting installation" },
-  { src: workTiling, alt: "Large format tiled kitchen floor" },
-  { src: workPainting, alt: "Freshly painted hallway with panelling" },
-  { src: workFlooring, alt: "Newly fitted light oak laminate flooring" },
-  { src: workPlastering, alt: "Smoothly skimmed walls and ceiling" },
-  { src: workGarden, alt: "Landscaped garden with new patio and fencing" },
+  { src: workLighting, alt: "Drop ceiling with recessed spotlights and blue LED cove lighting" },
+  { src: workTiling, alt: "Marble-effect tiled bathroom walls and floor" },
+  { src: workPainting, alt: "Decorated living room with lit alcove shelving and LED coving" },
+  { src: workFlooring, alt: "Laminate-clad staircase with brushed metal nosings" },
+  { src: workPlastering, alt: "Freshly skimmed ceiling and walls with recessed lighting" },
+  { src: workGarden, alt: "Finished living room with media wall, alcoves and LED coving" },
 ];
 
 function HomePage() {

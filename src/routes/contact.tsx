@@ -12,15 +12,12 @@ import {
   ShieldCheck,
 } from "lucide-react";
 import { toast } from "sonner";
-import hero1 from "@/assets/hero-1.jpg";
-import hero2 from "@/assets/hero-2.jpg";
-import workTiling from "@/assets/work-tiling.jpg";
-import workLighting from "@/assets/work-lighting.jpg";
 import { PHONE_DISPLAY, PHONE_TEL, SERVICES } from "@/data/site";
 import { Btn, BtnAnchor } from "@/components/Btn";
 import { Reveal } from "@/components/Reveal";
 import { PageHero } from "@/components/PageHero";
 import { CtaBanner } from "@/components/CtaBanner";
+import { hero1, hero2, workTiling, workLighting } from "@/assets/photos";
 
 const title = "Contact Roshi Builders | Free Quotes — 07918 208882";
 const description =
