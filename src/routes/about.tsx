@@ -109,7 +109,7 @@ function AboutPage() {
               <div className="grid gap-6 sm:grid-cols-[9rem_minmax(0,1fr)] sm:items-center">
                 <img
                   src={roshi}
-                  alt="Roshi, founder of Roshi Builders"
+                  alt="Bespoke media wall with electric fireplace and recessed lighting, built by Roshi"
                   width={1024}
                   height={1024}
                   loading="lazy"
