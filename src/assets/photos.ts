@@ -1,26 +1,16 @@
-import bathroom from "./bathroom.jpg.asset.json";
-import ceilingLed from "./ceiling-led.jpg.asset.json";
-import ceilingLed2 from "./ceiling-led-2.jpg.asset.json";
-import livingLed from "./living-led.jpg.asset.json";
-import livingMediaWall from "./living-media-wall.jpg.asset.json";
-import loftRoom from "./loft.jpg.asset.json";
-import mediaWallFire from "./media-wall-fire.jpg.asset.json";
-import mediaWallLed from "./media-wall-led.jpg.asset.json";
-import plasteringImg from "./plastering.jpg.asset.json";
-import stairsImg from "./stairs.jpg.asset.json";
-
-/** Real completed-project photos supplied by Roshi Builders. */
+/** Real completed-project photos supplied by Roshi Builders.
+ *  Files live in the repo at /public/images/ and are served by literal path. */
 export const PHOTO = {
-  mediaWallLed: mediaWallLed.url,
-  mediaWallFire: mediaWallFire.url,
-  livingMediaWall: livingMediaWall.url,
-  livingLed: livingLed.url,
-  ceilingLed: ceilingLed.url,
-  ceilingLed2: ceilingLed2.url,
-  plastering: plasteringImg.url,
-  loft: loftRoom.url,
-  bathroom: bathroom.url,
-  stairs: stairsImg.url,
+  mediaWallLed: "/images/media-wall-led.jpg",
+  mediaWallFire: "/images/media-wall-fire.jpg",
+  livingMediaWall: "/images/living-media-wall.jpg",
+  livingLed: "/images/living-led.jpg",
+  ceilingLed: "/images/ceiling-led.jpg",
+  ceilingLed2: "/images/ceiling-led-2.jpg",
+  plastering: "/images/plastering.jpg",
+  loft: "/images/loft.jpg",
+  bathroom: "/images/bathroom.jpg",
+  stairs: "/images/stairs.jpg",
 } as const;
 
 /** Aliases used across the site sections. */
