@@ -1,6 +1,6 @@
 import { Link } from "@tanstack/react-router";
 import { Facebook, Instagram, Mail, MapPin, Music2, Phone } from "lucide-react";
-import logo from "@/assets/logo.png";
+const logo = "/images/logo.png";
 import { NAV_LINKS, PHONE_DISPLAY, PHONE_TEL, SERVICES } from "@/data/site";
 
 const socialIcons = { Instagram, Facebook, TikTok: Music2 } as const;

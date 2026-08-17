@@ -1,7 +1,7 @@
 import { useEffect, useState } from "react";
 import { Link, useRouterState } from "@tanstack/react-router";
 import { Menu, Phone, X } from "lucide-react";
-import logo from "@/assets/logo.png";
+const logo = "/images/logo.png";
 import { NAV_LINKS, PHONE_DISPLAY, PHONE_TEL } from "@/data/site";
 import { BtnAnchor, BtnLink } from "@/components/Btn";
 import { cn } from "@/lib/utils";
